@@ -5,7 +5,7 @@ const app = express();
 
 // Configuração do proxy para redirecionar chamadas para a API
 app.use(
-  "/api", // Rota base para o proxy
+  "/", // Rota base para o proxy
   createProxyMiddleware({
     target: "http://15.228.245.31:8080", // Substitua pela URL da API
     changeOrigin: true, // Permite alterar o cabeçalho "Host"
