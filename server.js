@@ -7,7 +7,7 @@ const app = express();
 app.use(
   "/", // Rota base para o proxy
   createProxyMiddleware({
-    target: "http://15.228.245.31:8080", // Substitua pela URL da API
+    target: "http://15.228.245.31:8080", // URL da API
     changeOrigin: true, // Permite alterar o cabeçalho "Host"
   })
 );
